@@ -47,8 +47,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" id="v-pills-add-user-tab" data-bs-toggle="pill" data-bs-target="#v-pills-add-user" type="button" role="tab" aria-controls="v-pills-add-user" aria-selected="false">
+              <span data-feather="plus" class="align-text-bottom"></span>
+              Add User
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" id="v-pills-categories-tab" data-bs-toggle="pill" data-bs-target="#v-pills-categories" type="button" role="tab" aria-controls="v-pills-categories" aria-selected="false">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+              <span data-feather="plus" class="align-text-bottom"></span>
               Add Comapny
             </a>
           </li>
@@ -108,7 +114,9 @@
               <!-- users  -->
       <div class="tab-pane fade" id="v-pills-users" role="tabpanel" aria-labelledby="v-pills-users-tab">
         <h1>Users</h1>
-        <div class="card bg-success text-white mt-5">
+        <button type="button" class="btn btn-success btn-lg"><span data-feather="plus" ></span>Add Users</button>
+
+        <div class="card bg-success text-white mt-2">
           <div class="card-body">
             <div class="card-title">Users List</div>
           </div>
@@ -268,7 +276,60 @@
               </li>
             </ul>
           </nav>
+        </div>
+
+           <!-- add user  -->
+           <div class="tab-pane fade" id="v-pills-add-user" role="tabpanel" aria-labelledby="v-pills-add-user-tab">
+            <div class="card bg-success text-white mt-2">
+              <div class="card-body">
+                <div class="card-title">Add User</div>
+              </div>
+            </div>
+                   <!-- form     -->
+                   <form class="row g-3 mt-3">
+                    <div class="col-12">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                      <label for="firstname" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col-12">
+                      <label for="lastname" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="col-12">
+                      <label for="role" class="form-label">Role</label>
+                      <input type="text" class="form-control" id="role" placeholder="Role">
+                    </div>
+                    <div class="col-12">
+                      <label for="teamcode" class="form-label">Team Code</label>
+                      <input type="text" class="form-control" id="teamcode" placeholder="Team Code">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="phonecode" class="form-label">Phone Code</label>
+                      <input type="text" class="form-control" id="phonecode">
+                    </div>
+                    <div class="col-12">
+                      <label for="iamge" class="form-label">Insert Image</label>
+                      <input type="file" class="form-control" id="image">
+                    </div>
+                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </form>
            </div>
+          <!-- add user end  -->
            <!-- Company  -->
            
            <div class="tab-pane fade" id="v-pills-categories" role="tabpanel" aria-labelledby="v-pills-categories-tab">
